@@ -23,7 +23,7 @@ export default function Home() {
       {data?.map((item: any) => (
         <p key={item.id}>{item.attributes.name}</p>
       ))}
-      <p>123123</p>
+      <p>test</p>
     </>
   );
 }
