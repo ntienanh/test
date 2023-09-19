@@ -11,7 +11,7 @@ export default function Home() {
     )
       .then((response) => response.json())
       .catch((err) => console.log(err));
-    return response.data;
+    return response?.data;
   };
 
   React.useEffect(() => {
@@ -20,9 +20,10 @@ export default function Home() {
 
   return (
     <>
-      {data.map((item: any) => (
+      {data?.map((item: any) => (
         <p key={item.id}>{item.attributes.name}</p>
       ))}
+      <p>123123</p>
     </>
   );
 }
